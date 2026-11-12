@@ -1,0 +1,109 @@
+/* FarReach — shared section components */
+/* ---- partners ---- */
+.logo-marquee { margin: 6.5rem 0 6rem; overflow: hidden; }
+.logo-track { display: flex; width: max-content; animation: logos 30s linear infinite; }
+.logo-track:hover { animation-play-state: paused; }
+.logo-item { flex-shrink: 0; width: 16.0625rem; height: 6.875rem; margin: 0 5.375rem; display: flex; align-items: center; justify-content: center; color: var(--fg); opacity: .92; transition: opacity 400ms; }
+.logo-item:hover { opacity: 1; }
+.logo-item svg { width: 100%; height: 100%; }
+@keyframes logos { to { transform: translateX(-50%); } }
+@media (max-width: 639px) {
+  .logo-marquee { margin: 3rem 0 4rem; }
+  .logo-item { width: 8.0625rem; height: 5rem; margin: 0 2.275rem; }
+}
+
+/* ---- services ---- */
+.svc-row { position: relative; display: flex; flex-wrap: wrap; align-items: center; }
+.svc-shape { position: relative; width: 28rem; height: 28rem; margin-left: 1rem; flex-shrink: 0; }
+.svc-shape svg { position: absolute; inset: 0; width: 100%; height: 100%; transition: transform 1100ms var(--ease), opacity 700ms var(--ease); }
+.svc-shape svg.out { transform: scale(.4) rotate(90deg); opacity: 0; }
+.svc-shape svg.pre { transform: scale(.4) rotate(-90deg); opacity: 0; }
+.svc-shape svg path, .svc-shape svg circle, .svc-shape svg rect { fill: var(--yellow); }
+.svc-slides { position: relative; width: 40rem; height: 20.6rem; margin-left: 2.5rem; }
+.svc { position: absolute; left: 0; top: 0; width: 38rem; display: flex; flex-direction: column; justify-content: center; height: 100%; }
+.svc .t-body { margin-top: 1.75rem; }
+.svc .arrow-link { margin-top: 2rem; align-self: flex-start; margin-left: .25rem; }
+.svc > * { opacity: 0; transform: translateY(1.5rem); transition: opacity 500ms var(--ease), transform 900ms var(--ease); }
+.svc.on > * { opacity: 1; transform: none; }
+.svc.on > :nth-child(2) { transition-delay: 90ms; } .svc.on > :nth-child(3) { transition-delay: 180ms; }
+.svc:not(.on) { pointer-events: none; }
+.svc-count { width: 100%; padding-left: 31.5rem; margin-top: 0; }
+.counter { display: inline-flex; height: 3.125rem; border: 1px solid currentColor; border-radius: 2rem; overflow: hidden; }
+.counter .half { position: relative; width: 3.4375rem; height: 100%; font-size: 1.375rem; font-weight: 700; overflow: hidden; }
+.counter .half + .half { border-left: 1px solid currentColor; }
+.counter .num, .counter .ar { position: absolute; inset: 0; display: grid; place-items: center; transition: transform 600ms var(--ease), opacity 400ms; }
+.counter .ar { transform: translateY(100%); opacity: 0; }
+.counter .half:hover .num { transform: translateY(-100%); opacity: 0; }
+.counter .half:hover .ar { transform: none; opacity: 1; }
+.counter .num.roll { animation: roll 700ms var(--ease); }
+@keyframes roll { from { transform: translateY(100%); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (max-width: 639px) {
+  .svc-row { flex-direction: column; align-items: flex-start; }
+  .svc-shape { width: 17.5rem; height: 17.5rem; margin: 0 auto; }
+  .svc-slides { width: 100%; margin: 2.5rem 0 0; height: 21rem; }
+  .svc { width: 100%; justify-content: flex-start; }
+  .svc .t-body { margin-top: 1.25rem; }
+  .svc .arrow-link { margin-top: 1.5rem; }
+  .svc-count { padding-left: 0; margin-top: 1rem; display: flex; justify-content: center; }
+}
+
+/* ---- work rail ---- */
+.work { overflow: hidden; }
+.rail-wrap { margin-top: 5rem; padding-left: var(--pad); cursor: grab; }
+.rail-wrap.drag { cursor: grabbing; }
+.rail { display: flex; gap: 1.625rem; width: max-content; will-change: transform; }
+.card { position: relative; display: block; width: 37.9375rem; height: 36.25rem; overflow: hidden; background: #111; color: #fff; flex-shrink: 0; user-select: none; -webkit-user-drag: none; }
+.card video, .card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1400ms var(--ease); pointer-events: none; }
+.card::after { content: ""; position: absolute; inset: 0; background: rgba(28, 28, 45, .62); opacity: 0; transition: opacity 700ms var(--ease); }
+.card .info { position: absolute; z-index: 2; left: 3.5rem; right: 3rem; top: 5.3rem; }
+.card .client { font-size: 1.375rem; line-height: 1.375rem; font-weight: 300; }
+.card h3 { margin-top: 2.4rem; font-size: 3rem; line-height: 3.42rem; font-weight: 700; letter-spacing: -0.025rem; max-width: 27rem; }
+.card .chips { display: flex; flex-wrap: wrap; gap: .65rem .9rem; margin-top: 2rem; }
+.card .chips span { display: inline-flex; align-items: center; height: 2.25rem; padding: 0 1rem; border: 1px solid #fff; border-radius: 2rem; font-size: .875rem; letter-spacing: .0175rem; transition: background-color 400ms, color 400ms; }
+.card .chips span:hover { background: #fff; color: #000; }
+.card .info > * { opacity: 0; transform: translateY(1.25rem); transition: opacity 500ms var(--ease), transform 800ms var(--ease); }
+.card:hover::after, .card:focus-visible::after { opacity: 1; }
+.card:hover .info > *, .card:focus-visible .info > * { opacity: 1; transform: none; }
+.card:hover .info > :nth-child(2) { transition-delay: 60ms; } .card:hover .info > :nth-child(3) { transition-delay: 120ms; }
+.card:hover video, .card:hover img { transform: scale(1.04); }
+@media (max-width: 639px) {
+  .rail-wrap { margin-top: 3rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-right: var(--pad); scrollbar-width: none; }
+  .rail-wrap::-webkit-scrollbar { display: none; }
+  .rail { transform: none !important; gap: 1rem; }
+  .card { width: 25rem; height: 28rem; scroll-snap-align: start; background: transparent; color: var(--fg); height: auto; overflow: visible; }
+  .card .media { position: relative; height: 28rem; overflow: hidden; }
+  .card::after { display: none; }
+  .card .info { position: static; padding-top: 1.5rem; }
+  .card .info > * { opacity: 1; transform: none; }
+  .card h3 { margin-top: .4rem; font-size: 2.25rem; line-height: 2.6rem; }
+  .card .chips { display: none; }
+}
+.card .media { position: absolute; inset: 0; }
+@media (max-width: 639px) { .card .media { position: relative; } }
+
+/* ---- big marquee ---- */
+.big-marquee { overflow: hidden; height: 11.25rem; }
+.bm-track { display: flex; align-items: center; width: max-content; will-change: transform; }
+.bm-item { display: flex; align-items: center; font-size: 11.25rem; line-height: 11.25rem; font-weight: 800; letter-spacing: -0.1375rem; text-transform: uppercase; white-space: nowrap; }
+.bm-item svg { width: 9.3rem; height: 9.3rem; margin: 0 3rem; flex-shrink: 0; }
+.bm-item svg path { fill: currentColor; }
+@media (max-width: 639px) { .big-marquee { height: 7rem; } .bm-item { font-size: 7rem; line-height: 7rem; } .bm-item svg { width: 5.6rem; height: 5.6rem; margin: 0 1.5rem; } }
+
+/* ---- stats ---- */
+.stat-row { display: flex; gap: 5rem; margin-top: 3rem; }
+.stat { position: relative; flex: 1; min-width: 0; border-left: .0781rem solid currentColor; padding-left: 3.1875rem; height: 14.25rem; display: flex; flex-direction: column; }
+.stat .num { display: flex; height: 6.875rem; font-size: 6.25rem; line-height: 6.875rem; font-weight: 300; letter-spacing: -0.1375rem; overflow: hidden; }
+.stat .num .d { display: inline-block; position: relative; overflow: hidden; height: 6.875rem; }
+.stat .num .d b { display: block; font-weight: inherit; transition: transform 900ms var(--ease), opacity 700ms var(--ease); }
+.stat .num .d b.leave { position: absolute; left: 0; top: 0; transform: translateY(-100%); opacity: 0; }
+.stat .num .d b.enter { transform: translateY(100%); opacity: 0; }
+.stat .label { margin-top: .9rem; font-size: 1.375rem; line-height: 1.875rem; font-weight: 300; max-width: 15rem; transition: opacity 500ms var(--ease); }
+.stat .label.fade { opacity: 0; }
+.stat a { margin-top: auto; margin-left: .25rem; transition: opacity 500ms var(--ease); }
+.stat a.fade { opacity: 0; }
+@media (max-width: 639px) {
+  .stat-row { flex-direction: column; gap: 3rem; margin-top: 2.5rem; }
+  .stat { height: 12.5rem; padding-left: 1.75rem; }
+  .stat .num, .stat .num .d { font-size: 5rem; height: 5.6rem; line-height: 5.6rem; }
+}
+

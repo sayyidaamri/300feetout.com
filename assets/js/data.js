@@ -1,0 +1,108 @@
+/* FarReach — all editable copy & content data in one place.
+   Brand, client names, numbers and case studies are fictional placeholders. */
+window.FR_DATA = {
+  brand: { name: "FarReach", city: "Portland, OR", email: "hello@farreach.studio", phone: "503.555.0142", address: "220 NW Lumen Ave, Portland, OR 97209", since: 2004 },
+
+  heroPairs: [
+    { a: "brands", b: "people.", c: null },
+    { a: "tech", b: "investors.", c: "vantage" },
+    { a: "healthcare", b: "patients.", c: "helix" },
+    { a: "real estate", b: "residents.", c: "oakridge" },
+    { a: "hospitality", b: "explorers.", c: "palmera" },
+    { a: "education", b: "learners.", c: "bayview" },
+    { a: "the arts", b: "patrons.", c: "atlas" },
+  ],
+
+  cases: [
+    { id: "palmera", client: "Palmera Springs", industry: "Hospitality", title: "Bold digital campaigns for a sun-soaked desert retreat", video: "hotel", img: "concert",
+      big: ["212%", "lift in search revenue"], services: ["Channel Strategy", "Campaign Concepts + Rollout", "Paid Media", "Search Marketing", "Website Migration & Care"],
+      word: "Desert bloom",
+      brief: "An iconic desert resort needed to fill shoulder-season rooms without discounting its way there. We rebuilt its channel mix around the guests who already loved it.",
+      results: [["212%", "lift in revenue from organic search"], ["38%", "more direct bookings"], ["4.1x", "return on paid social"], ["1", "unified booking journey"]],
+      quote: ["They treated our brand like it was their own. Every campaign felt like us — only louder.", "Director of Marketing, Palmera Springs"] },
+    { id: "vantage", client: "Vantage Analytics", industry: "Technology", title: "Scaling a global data platform with a seamless web build", video: "tech", img: "coding",
+      big: ["$140M", "in annual revenue"], services: ["Technology Audits", "Website Development", "Website Migration & Care", "Security & Speed Tuning"],
+      word: "Team integration",
+      brief: "A fast-growing analytics company needed a new website with deep product integrations and a migration that could not break a single page.",
+      results: [["48%", "rise in engagement"], ["65%", "faster page loads"], ["2x", "teams working as one"], ["1", "future-ready platform"]],
+      quote: ["FarReach ships on time and on budget, understands how to frame functionality, and works like part of our team.", "VP of Growth, Vantage Analytics"] },
+    { id: "helix", client: "Helix Genomics", industry: "Life Sciences", title: "Taking a breakthrough biotech brand from lab to market", video: "health", img: "lab",
+      big: ["3.2x", "qualified leads"], services: ["Campaign Concepts + Rollout", "Custom Web Design", "Site Architecture", "Motion & Video", "Website Development"],
+      word: "Lab to launch",
+      brief: "Helix had the science. It needed a story that investors, clinicians and patients could all follow — and a site that could grow with its pipeline.",
+      results: [["3.2x", "more qualified leads in six months"], ["57%", "longer time on site"], ["12", "motion explainers produced"], ["1", "brand system for every audience"]],
+      quote: ["They made complex science feel human without dumbing it down.", "Chief Commercial Officer, Helix Genomics"] },
+    { id: "oakridge", client: "Oakridge Living", industry: "Real Estate", title: "A fresh corporate brand for a 100-year-old community builder", video: "estate", img: "towers",
+      big: ["540%", "jump in traffic"], services: ["Brand Identity", "Campaign Concepts + Rollout", "Content Strategy", "Custom Web Design", "Website Development"],
+      word: "Century refresh",
+      brief: "A century-old builder of neighborhoods wanted to feel as warm and modern as the communities it creates today.",
+      results: [["540%", "jump in site traffic after launch"], ["29%", "more tour requests"], ["14", "communities rebranded"], ["1", "story told everywhere"]],
+      quote: ["Our residents noticed the new brand before we even announced it.", "President, Oakridge Living"] },
+    { id: "bayview", client: "Bayview State", industry: "Education", title: "Telling a campus story that students actually watch", video: "edu", img: "students",
+      big: ["40+", "students on camera"], services: ["Content Production", "Custom Web Design", "Site Architecture", "Search Marketing", "Website Development"],
+      word: "Campus voices",
+      brief: "Bayview wanted prospective students to see themselves on campus. We handed the camera to the people who live there.",
+      results: [["40+", "students and staff in one video shoot"], ["2.4M", "views across channels"], ["31%", "more campus visit sign-ups"], ["1", "content engine for every term"]],
+      quote: ["The videos sound like our students, because they are our students.", "Dean of Admissions, Bayview State"] },
+    { id: "atlas", client: "Atlas Ballet", industry: "Arts & Culture", title: "Selling out a season with motion-first storytelling", video: "arts", img: "crowd",
+      big: ["97%", "seats filled"], services: ["Campaign Concepts + Rollout", "Motion & Video", "Paid Media", "Custom Web Design"],
+      word: "Opening night",
+      brief: "A beloved company needed new audiences without losing its loyal patrons. We let the dancers do the talking.",
+      results: [["97%", "of seats filled for the season"], ["44%", "first-time ticket buyers"], ["6", "campaign films"], ["1", "season to remember"]],
+      quote: ["We have never had so many new faces in the house.", "Executive Director, Atlas Ballet"] },
+  ],
+
+  stats: [
+    ["212%", "lift in revenue from organic search", "Palmera Springs", "palmera"],
+    ["238%", "growth in revenue from paid search", "Northwind Hotels", "palmera"],
+    ["540%", "jump in site traffic after launch", "Oakridge Living", "oakridge"],
+    ["48%", "rise in audience engagement", "Vantage Analytics", "vantage"],
+    ["40+", "students and staff in one video shoot", "Bayview State", "bayview"],
+    ["3.2x", "more qualified leads in six months", "Helix Genomics", "helix"],
+  ],
+
+  pastClients: ["Northwind Hotels", "Harbor Light Festival", "Cedar & Pine", "Lumen Bio", "Kestrel Air", "Marlow College", "Glass Fern Café", "Copperline Wines", "Union Square Lofts", "Typeface Summit", "Coastline Ballet", "Saltmarsh Village", "Brightwater Plaza", "Kona Reef Resort", "Third Rail Media", "Summit Snowworks", "Wexford Museum", "The Alder", "Quill & Ink", "Fernway Kitchen", "Redwood Opera", "Harborview Club", "Pine Ridge Group", "Slow Tide Studio", "Halden Hotels", "Pasture & Plate", "Rivergate Airport", "Atlas Ballet"],
+
+  team: [
+    ["Maya Okafor", "Founder & Principal", "woman-red"],
+    ["Daniel Reyes", "Technology Director", "man-grey"],
+    ["Priya Nair", "Brand Strategy Lead", "woman-grey"],
+    ["Theo Brandt", "Creative Director", "man-smile"],
+    ["Lena Fischer", "Senior Web Developer", "woman-blonde"],
+    ["Jonah Kim", "Senior Developer", "young-man"],
+    ["Ava Lindqvist", "Graphic Designer", "woman-red"],
+    ["Marcus Bell", "Motion Designer", "man-smile"],
+    ["Sofia Duarte", "Content Strategist", "woman-grey"],
+    ["Ben Hartley", "Project Manager", "man-grey"],
+    ["Nora Quinn", "Paid Media Specialist", "woman-blonde"],
+    ["Eli Novak", "SEO Specialist", "young-man"],
+  ],
+
+  posts: [
+    ["Why “Launch Ready” Rarely Is", "insights", "desk"], ["The Bullhorn Problem", "culture", "concert"], ["Meet the Team: Jonah", "culture", "young-man"],
+    ["Designers vs. the Robots", "insights", "vr-man"], ["Brands, Names & Trademarks", "insights", "towers"], ["Trust, Safety & Local Tech in Senior Living", "insights", "woman-grey"],
+    ["Brand as a Multiplier", "insights", "meeting"], ["Retirement Is Out. Momentum Is In.", "culture", "woman-blonde"], ["Stop Calling It a Rebrand", "work", "talk"],
+    ["The Receipt for Your Soul", "insights", "office-two"], ["Why Your Brand Feels Beige", "insights", "city"], ["Brand Friction, Explained", "insights", "cells"],
+    ["Why Design Systems Matter", "work", "coding"], ["Meet the Team: Lena", "culture", "woman-blonde"], ["Redesigning Care: Behind the Campaign", "work", "lab"],
+    ["Rebuilding the Engine Mid-Flight", "insights", "highfive"], ["Aging in Motion", "culture", "students"], ["Holiday Gift Guide", "culture", "crowd"],
+  ],
+
+  faqs: [
+    ["Why has our lead generation flattened out?", "Most plateaus come from a mismatch between the message and the moment. We audit your funnel, find the drop-off points, and fix the story before we spend another dollar on media."],
+    ["How can we lower our customer acquisition cost?", "By investing in the channels that already convert and cutting the ones that only look busy. Clear attribution, better landing pages and smarter audiences do most of the work."],
+    ["How do we speed up go-to-market for new campaigns?", "Shared templates, a tight brand system and one team that owns the whole path from idea to launch. Fewer hand-offs means faster, better work."],
+    ["What is a brand sprint and do we need one?", "A focused, two-to-three week session that aligns leadership on who you are, who you serve and how you sound. If your team describes the company five different ways, you need one."],
+    ["How do you fix misalignment between marketing and sales?", "We get both teams in a room, agree on what a good lead is, and build the reporting that keeps everyone honest."],
+  ],
+
+  values: [
+    ["Curious", "always", "We ask one more question than feels comfortable, because the best ideas hide behind it."],
+    ["Honest", "by default", "We tell you what we think, show our math, and own our mistakes."],
+    ["Brave", "on purpose", "Safe work is forgettable. We would rather try something new and learn fast."],
+    ["Kind", "to everyone", "Great work comes from teams that look after each other — and their clients."],
+    ["Useful", "every day", "Pretty is not enough. Everything we make has a job to do."],
+    ["Local", "and global", "Rooted in Portland, working with people everywhere."],
+  ],
+
+  heroMedia: { work: "hotel", services: "tech", about: "intro", insights: "edu" },
+};
