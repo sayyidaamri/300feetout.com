@@ -1,5 +1,7 @@
 # FarReach — Agency Website
 
+![FarReach homepage preview](docs/preview/homepage.gif)
+
 A static, no-build marketing site for **FarReach**, a fictional independent digital agency (Portland, OR). It's plain HTML, CSS and vanilla JavaScript, so there's nothing to install or compile.
 
 > Brand name, client names, figures, case studies and contact details are **fictional placeholders** (see `assets/js/data.js`). Replace them before any real use.
